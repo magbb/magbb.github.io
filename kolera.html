@@ -45,9 +45,9 @@
 <script>
     var data =  {'data': {
                 'onclick': function (d, element) {
-                    date = d["x"];
-                    date = date.toISOString().slice(0, 10);
-                    date = date.replace(/-/g, "");date = date.slice(0,4) + '0101'; dateTo = date.slice(0,4) + '1231'; term = d["name"];
+                    dateStr = d["x"];
+                    year = dateStr.getFullYear();
+                    date = year + '0101'; dateTo = year + '1231'; term = d["name"];
                     term = term.replace('/', ' OR ')
                     url = "https://www.nb.no/search?q=" + encodeURIComponent(term) + "&mediatype=aviser&fromDate=" + date + "&toDate=" + dateTo
                     window.open(url);
