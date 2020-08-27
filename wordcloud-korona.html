@@ -6,27 +6,13 @@
     <script src="lib/d3/d3.layout.cloud.js"></script>
     <script src="lib/d3.wordcloud.js"></script>
     <script src="korona.words.js"></script>
-
-    <style type="text/css">
-      .flexbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #comments {
-        font-family: 'PT Serif', serif;
-        font-size: 16px;
-        line-height: 1.3em;
-        color: #737373;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="timeline-interactive-graphics.css">
   </head>
   <body style="text-align: center">
     <div id="wordcloud-wrapper" class="flexbox" style="width: 100%;" >
       <div id='wordcloud' style="width: 80%; display: inline-block;"></div>
-      <div id="comments" style="width: 18%; display: inline-block;">
-        Ordskyen viser ord som opptrer sammen med ord som refererer til koronaviruset i alle avisene fra januar til juli 2020 (<a href="https://www.nb.no/artikler/kvantitativ-analyse-av-aviser/">såkalte kollokasjoner</a>). De gir et innblikk i hva som skrives om sykdommen. Ved å klikke på et ord, vises eksempler på kontekst.
+      <div class="text" id="comments" style="width: 18%; display: inline-block;">
+        Ordskyen viser ord som opptrer sammen med ord som refererer til koronaviruset i alle avisene fra januar til juli 2020 (<a href="https://www.nb.no/artikler/kvantitativ-analyse-av-aviser/" target="_blank">såkalte kollokasjoner</a>). De gir et innblikk i hva som skrives om sykdommen. Ved å klikke på et ord, vises eksempler på kontekst.
       </div>
     </div>
     <script>

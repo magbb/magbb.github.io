@@ -1,0 +1,25 @@
+.c3-grid text {
+        fill:#263640;
+        color: black;
+    }
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    font-family: 'PT Sans Narrow',sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.text {
+    font-family: 'PT Serif',serif;
+    font-size: 16px;
+    line-height: 1.3em;
+    color: #737373;
+}
